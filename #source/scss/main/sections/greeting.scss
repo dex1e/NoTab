@@ -1,0 +1,78 @@
+.main__greeting__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .main__greeting__left {
+        display: flex;
+        flex-direction: column;
+        margin: 154px 0 0 0;
+        min-width: 60%;
+
+        .main__greeting__title {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 109%;
+        }
+
+        .main__greeting__description {
+            display: flex;
+
+            &__image {
+                padding: 88px 31px 0 0;
+                flex: 0 0 139.43px;
+                // width: 139.43px;
+                height: 0;
+            }
+
+            &__text {
+                flex: 1 1 auto;
+                margin: 129px 0 0 0;
+                font-family: 'Noto Sans';
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 27px;
+            }
+        }
+
+        .main__greeting__download {
+            margin: 267px 0 15px 0;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 70px;
+        }
+    }
+
+    .main__greeting__image {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-left: 84px;
+
+        .main__greeting__phone {
+            margin-top: 29px;
+            // margin-left: calc(100% - (100% - 180px));
+            width: 332.88px;
+            height: 667.8px;
+            z-index: 4;
+        }
+
+        .main__greeting__phone__border {
+            position: absolute;
+            width: 307.77px;
+            height: 631.35px;
+            // margin-left: calc(100% - (100% - 149px));
+            margin-top: calc(100% - (100% - 38.6px));
+            background: #000;
+            opacity: 0.4;
+            filter: blur(71.6833px);
+            z-index: 3;
+        }
+
+        .main__greeting__button {
+            margin-bottom: 24.67px;
+        }
+    }
+}

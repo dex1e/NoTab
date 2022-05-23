@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 23px 0 0 0;
+
+    &__logo {
+        display: flex;
+        margin: 0 108px 0 0;
+        align-items: center;
+    }
+
+    &__logo__image {
+        width: 107px;
+        height: 109px;
+        margin: 0 8px 0 0;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__logo__text {
+        width: 96px;
+        height: 24.75px;
+    }
+
+    &__login {
+        display: flex;
+        align-items: center;
+    }
+
+    &__login__image {
+        width: 26px;
+        height: 25px;
+        margin: 0 12px 0 0;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__login__text {
+        font-family: 'Noto Sans';
+        font-weight: 500;
+        line-height: 25px;
+        color: white;
+
+        &:hover {
+            color: rgb(0, 153, 255);
+        }
+    }
+
+}

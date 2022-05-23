@@ -1,0 +1,485 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+[class*=__container] {
+  padding: 0 100px;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Montserrat;
+  font-size: 18px;
+  color: #fff;
+  background-color: #000;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin: 23px 0 0 0;
+}
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 108px 0 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo__image {
+  width: 107px;
+  height: 109px;
+  margin: 0 8px 0 0;
+}
+.header__logo__image img {
+  max-width: 100%;
+}
+.header__logo__text {
+  width: 96px;
+  height: 24.75px;
+}
+.header__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__login__image {
+  width: 26px;
+  height: 25px;
+  margin: 0 12px 0 0;
+}
+.header__login__image img {
+  max-width: 100%;
+}
+.header__login__text {
+  font-family: "Noto Sans";
+  font-weight: 500;
+  line-height: 25px;
+  color: white;
+}
+.header__login__text:hover {
+  color: #0099ff;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.background {
+  width: 100vw;
+}
+
+.background__big__glow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-filter: brightness(1.25) contrast(175%);
+          filter: brightness(1.25) contrast(175%);
+  z-index: 2;
+}
+
+.background__little__glow {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 93px;
+  top: 470px;
+  background: rgba(96, 92, 234, 0.5);
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+}
+
+.main__greeting__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main__greeting__container .main__greeting__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 154px 0 0 0;
+  min-width: 60%;
+}
+.main__greeting__container .main__greeting__left .main__greeting__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 109%;
+}
+.main__greeting__container .main__greeting__left .main__greeting__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main__greeting__container .main__greeting__left .main__greeting__description__image {
+  padding: 88px 31px 0 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 139.43px;
+          flex: 0 0 139.43px;
+  height: 0;
+}
+.main__greeting__container .main__greeting__left .main__greeting__description__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 129px 0 0 0;
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+.main__greeting__container .main__greeting__left .main__greeting__download {
+  margin: 267px 0 15px 0;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 70px;
+}
+.main__greeting__container .main__greeting__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-left: 84px;
+}
+.main__greeting__container .main__greeting__image .main__greeting__phone {
+  margin-top: 29px;
+  width: 332.88px;
+  height: 667.8px;
+  z-index: 4;
+}
+.main__greeting__container .main__greeting__image .main__greeting__phone__border {
+  position: absolute;
+  width: 307.77px;
+  height: 631.35px;
+  margin-top: calc(100% - (100% - 38.6px));
+  background: #000;
+  opacity: 0.4;
+  -webkit-filter: blur(71.6833px);
+          filter: blur(71.6833px);
+  z-index: 3;
+}
+.main__greeting__container .main__greeting__image .main__greeting__button {
+  margin-bottom: 24.67px;
+}
+
+.cookies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #212834;
+  height: 93px;
+}
+
+.cookies__text {
+  padding-left: 100px;
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.cookies__button {
+  margin-right: 24px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 0.5px solid #FFFFFF;
+  border-radius: 6px;
+  width: 132px;
+  height: 50px;
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+}
+.cookies__button:hover {
+  color: #0099ff;
+  border: 0.5px solid #0099ff;
+  cursor: pointer;
+}
+
+.mission__authorization {
+  margin: 61px 177px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text {
+  padding-bottom: 30px;
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+}
+
+.link a {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #fff;
+}
+.link a:hover {
+  color: #0099ff;
+}
+
+.border {
+  padding-left: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 503px;
+  height: 312px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 21.3671px;
+}
+
+.mission__body {
+  margin: 246px 0 283px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mission__info {
+  margin-right: 163px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 358px;
+          flex: 0 1 358px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title {
+  margin-bottom: 23px;
+  font-weight: 700;
+  font-size: 51px;
+  line-height: 62px;
+}
+
+.mission__description {
+  max-width: 315px;
+}
+
+.description {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.id {
+  background: url("/img/MAIN/id/back_blur.png"), url("/img/MAIN/id/background.png") no-repeat;
+  background-size: 100vw;
+}
+
+.id__content {
+  margin: 467px 0 293.85px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.id__phones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 100px;
+}
+
+.id__phone-left {
+  margin-right: 49.44px;
+}
+
+.id__info {
+  margin: 0 107px 74.15px 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 400px;
+          flex: 0 1 400px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.id__description {
+  max-width: 316px;
+}

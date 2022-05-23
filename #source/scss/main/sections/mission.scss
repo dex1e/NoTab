@@ -1,0 +1,82 @@
+.mission {
+    &__authorization {
+        margin: 61px 177px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.text {
+    padding-bottom: 30px;
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+}
+
+.link {
+    a {
+        font-family: 'Noto Sans';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        color: #fff;
+
+        &:hover {
+            color: rgb(0, 153, 255);
+        }
+    }
+}
+
+.border {
+    padding-left: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 503px;
+    height: 312px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 21.3671px;
+}
+
+
+.mission__body {
+    margin: 246px 0 283px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start
+}
+
+.mission__phone {}
+
+.mission__info {
+    margin-right: 163px;
+    flex: 0 1 358px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.mission__title {}
+
+.title {
+    margin-bottom: 23px;
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 62px;
+}
+
+.mission__description {
+    max-width: 315px;
+}
+
+.description {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}

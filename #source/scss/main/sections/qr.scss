@@ -1,0 +1,54 @@
+.qr {
+    background:
+        url("/img/MAIN/QR/back-blur.png") 0 0/100vw 682px no-repeat,
+        url("/img/MAIN/QR/dj-back.png") top left/auto no-repeat,
+        url("/img/MAIN/QR/drink-back.png") top right/auto no-repeat,
+        url("/img/MAIN/QR/Nightlife-back.png") top right no-repeat;
+
+    &__nightlife {
+        position: absolute;
+        left: 1199px;
+        top: 4567.81px;
+        transform: rotate(-12.84deg);
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        margin: 537px 0 0 195px;
+        flex: 0 1 376px;
+
+        .qr__title {}
+
+        .qr__description {
+            max-width: 315px;
+        }
+
+        .qr__buttons {
+            margin-top: 58px;
+        }
+    }
+
+    &__phones {
+        // margin-right: 56.44px;
+        // display: flex;
+
+        .qr__phone-top {
+            // margin-right: 80.44px;
+            position: absolute;
+            left: 638px;
+            top: 4774px;
+        }
+
+        .qr__phone-bottom {
+            position: absolute;
+            left: 1051px;
+            top: 5115px;
+
+        }
+    }
+
+}

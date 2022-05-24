@@ -104,7 +104,7 @@ body {
   font-family: Montserrat;
   font-size: 18px;
   color: #fff;
-  background-color: #000;
+  background-color: black;
 }
 
 .header {
@@ -442,7 +442,7 @@ body {
 }
 
 .id {
-  background: url("/img/MAIN/id/back_blur.png"), url("/img/MAIN/id/background.png") no-repeat;
+  background: url("/img/MAIN/id/back_blur.png") no-repeat, url("/img/MAIN/id/background.png") no-repeat;
   background-size: 100vw;
 }
 
@@ -482,4 +482,98 @@ body {
 
 .id__description {
   max-width: 316px;
+}
+
+.integration__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 452px;
+}
+
+.integration__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 497px;
+          flex: 0 1 497px;
+}
+
+.integration__description {
+  max-width: 395px;
+}
+
+.integration__images .years {
+  position: absolute;
+  left: 934.26px;
+  top: 3809px;
+}
+.integration__images .pacman {
+  position: absolute;
+  left: 754px;
+  top: 3993px;
+}
+.integration__images .bulb {
+  position: absolute;
+  left: 1058.36px;
+  top: 3991.49px;
+}
+.integration__images .months {
+  position: absolute;
+  left: 622px;
+  top: 4058.81px;
+}
+.integration__images .blue-hills {
+  position: absolute;
+  left: 876.68px;
+  top: 4101.8px;
+}
+.integration__images .data08 {
+  position: absolute;
+  left: 803.68px;
+  top: 4202.37px;
+}
+.integration__images .data01 {
+  position: absolute;
+  left: 1044px;
+  top: 4275px;
+}
+
+.qr {
+  background: url("/img/MAIN/QR/back-blur.png") 0 0/100vw 682px no-repeat, url("/img/MAIN/QR/dj-back.png") top left/auto no-repeat, url("/img/MAIN/QR/drink-back.png") top right/auto no-repeat, url("/img/MAIN/QR/Nightlife-back.png") top right no-repeat;
+}
+.qr__nightlife {
+  position: absolute;
+  left: 1199px;
+  top: 4567.81px;
+  -webkit-transform: rotate(-12.84deg);
+          transform: rotate(-12.84deg);
+}
+.qr__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.qr__info {
+  margin: 537px 0 0 195px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 376px;
+          flex: 0 1 376px;
+}
+.qr__info .qr__description {
+  max-width: 315px;
+}
+.qr__info .qr__buttons {
+  margin-top: 58px;
+}
+.qr__phones .qr__phone-top {
+  position: absolute;
+  left: 638px;
+  top: 4774px;
+}
+.qr__phones .qr__phone-bottom {
+  position: absolute;
+  left: 1051px;
+  top: 5115px;
 }

@@ -556,7 +556,7 @@ body {
           justify-content: space-between;
 }
 .qr__info {
-  margin: 537px 0 0 195px;
+  margin: 537px 0 413.67px 195px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 376px;
           flex: 0 1 376px;
@@ -576,4 +576,84 @@ body {
   position: absolute;
   left: 1051px;
   top: 5115px;
+}
+
+.generate {
+  margin-bottom: 229px;
+  position: relative;
+}
+.generate__back {
+  position: absolute;
+  z-index: -2;
+  top: -149px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 1022.45px;
+  height: 952.07px;
+  margin: 0 auto;
+  background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%) 100%;
+  opacity: 0.25;
+  -webkit-filter: blur(311.569px);
+          filter: blur(311.569px);
+  border-radius: 476.034px;
+  -webkit-transform: rotate(-0.55deg);
+          transform: rotate(-0.55deg);
+}
+.generate__body {
+  margin-bottom: 79.85px;
+}
+.generate__body .generate__logo {
+  background: url("/img/MAIN/Generate/noTab.png") no-repeat;
+  position: absolute;
+  z-index: -1;
+  top: 110px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 50px;
+}
+.generate__body .generate__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 563px;
+}
+.generate__body .generate__phone .generate__text {
+  margin-left: 129.44px;
+  margin-bottom: 66px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.generate__body .generate__arrow {
+  position: absolute;
+  top: 200px;
+  left: 950px;
+}
+.generate__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.generate__container .generate__title {
+  max-width: 381px;
+  font-weight: 700;
+  font-size: 51px;
+  line-height: 62px;
+}
+.generate__container .generate__description {
+  max-width: 292px;
+  font-family: "Noto Sans";
+  font-weight: 400;
+  line-height: 25px;
 }

@@ -37,8 +37,6 @@
             display: flex;
             margin-left: 563px;
 
-            .generate__phone {}
-
             .generate__text {
                 margin-left: 129.44px;
                 margin-bottom: 66px;
@@ -62,7 +60,8 @@
         align-items: center;
 
         .generate__title {
-            max-width: 381px;
+            flex: 0 1 381px;
+            // max-width: 381px;
             font-weight: 700;
             font-size: 51px;
             line-height: 62px;

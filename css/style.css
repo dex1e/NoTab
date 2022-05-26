@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Указываем box sizing */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:wght@400;500;700&family=Roboto:wght@500;700&display=swap");
 *,
 *::before,
 *::after {
@@ -646,7 +646,9 @@ body {
           align-items: center;
 }
 .generate__container .generate__title {
-  max-width: 381px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 381px;
+          flex: 0 1 381px;
   font-weight: 700;
   font-size: 51px;
   line-height: 62px;
@@ -656,4 +658,97 @@ body {
   font-family: "Noto Sans";
   font-weight: 400;
   line-height: 25px;
+}
+
+.easier {
+  position: relative;
+}
+.easier__back {
+  position: absolute;
+  top: 177px;
+  right: -1.63%;
+  z-index: -2;
+  width: 286.92px;
+  height: 267.17px;
+  background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+  opacity: 0.7;
+  -webkit-filter: blur(250px);
+          filter: blur(250px);
+  -webkit-transform: rotate(5.78deg);
+          transform: rotate(5.78deg);
+}
+.easier__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.easier__container .easier__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 421px;
+          flex: 0 1 421px;
+  margin-right: 160px;
+}
+.easier__container .easier__info .easier__description {
+  max-width: 365px;
+}
+.easier__phone {
+  margin-left: 311px;
+}
+.easier__phone .easier__lost {
+  padding: 1rem;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 22.8021px;
+  line-height: 27px;
+  width: 266.78px;
+  height: 98.81px;
+  border: 0.76007px solid rgba(255, 255, 255, 0.5);
+  border-radius: 18.2417px;
+  background-color: black;
+}
+.easier__phone .easier__lost-right {
+  position: absolute;
+  top: 386px;
+  left: 786px;
+}
+.easier__phone .easier__lost-left {
+  position: absolute;
+  top: 542px;
+  left: 304px;
+}
+.easier__phone .easier__split {
+  padding: 1rem;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 22.8021px;
+  line-height: 27px;
+  width: 185px;
+  height: 91px;
+  border: 0.76007px solid rgba(255, 255, 255, 0.5);
+  border-radius: 18.2417px;
+  background-color: black;
+  position: absolute;
+  top: 811px;
+  left: 1006px;
+}
+.easier__phone .easier__skip {
+  padding: 1rem;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 22.8021px;
+  line-height: 27px;
+  width: 175.58px;
+  height: 65.37px;
+  border: 0.76007px solid rgba(255, 255, 255, 0.5);
+  border-radius: 18.2417px;
+  background-color: black;
+  position: absolute;
+  top: 902px;
+  left: 509px;
 }

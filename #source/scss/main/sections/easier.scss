@@ -1,0 +1,98 @@
+.easier {
+    position: relative;
+
+    &__back {
+        position: absolute;
+        top: 177px;
+        right: -1.63%;
+        z-index: -2;
+        width: 286.92px;
+        height: 267.17px;
+        background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+        opacity: 0.7;
+        filter: blur(250px);
+        transform: rotate(5.78deg);
+    }
+
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+
+        .easier__info {
+            flex: 0 1 421px;
+            margin-right: 160px;
+
+            .easier__title {}
+
+            .easier__description {
+                max-width: 365px;
+            }
+        }
+    }
+
+    &__phone {
+        margin-left: 311px;
+
+        .easier__img {}
+
+        .easier__lost {
+            padding: 1rem;
+            text-align: center;
+            font-family: 'Roboto';
+            font-weight: 500;
+            font-size: 22.8021px;
+            line-height: 27px;
+            width: 266.78px;
+            height: 98.81px;
+            border: 0.76007px solid rgba(255, 255, 255, 0.5);
+            border-radius: 18.2417px;
+            background-color: black;
+        }
+
+        .easier__lost-right {
+            position: absolute;
+            top: 386px;
+            left: 786px;
+        }
+
+        .easier__lost-left {
+            position: absolute;
+            top: 542px;
+            left: 304px;
+        }
+
+        .easier__split {
+            padding: 1rem;
+            text-align: center;
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 22.8021px;
+            line-height: 27px;
+            width: 185px;
+            height: 91px;
+            border: 0.76007px solid rgba(255, 255, 255, 0.5);
+            border-radius: 18.2417px;
+            background-color: black;
+            position: absolute;
+            top: 811px;
+            left: 1006px;
+        }
+
+        .easier__skip {
+            padding: 1rem;
+            text-align: center;
+            font-family: 'Roboto';
+            font-weight: 500;
+            font-size: 22.8021px;
+            line-height: 27px;
+            width: 175.58px;
+            height: 65.37px;
+            border: 0.76007px solid rgba(255, 255, 255, 0.5);
+            border-radius: 18.2417px;
+            background-color: black;
+            position: absolute;
+            top: 902px;
+            left: 509px;
+        }
+    }
+}

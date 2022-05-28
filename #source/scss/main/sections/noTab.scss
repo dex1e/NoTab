@@ -1,0 +1,22 @@
+.noTab {
+    background: url("/img/MAIN/Notab/back.png") center/100% no-repeat;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+
+    &__phone {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 329px 0 245.84px 0;
+
+        .noTab__img {
+            background: url("/img/MAIN/Notab/noTab-img.png") center no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}

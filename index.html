@@ -11,25 +11,22 @@
 
 <body>
     <div class="wrapper">
-        <header class="header header__container">
-            <div class="header__logo">
-                <a class="header__logo__image" href="#">
-                    <img src="img/HEADER/logo.png" alt="logo"></a>
-
-                <a class="header__logo__text" href="#">
-                    <img src="img/HEADER/NoTab.svg" alt="NoTab">
-                </a>
-
+        <header class="header">
+            <div class="header__container">
+                <div class="logo">
+                    <a class="logo__image" href="#">
+                        <img src="img/HEADER/logo.png" alt="logo"></a>
+                    <a class="logo__text" href="#">
+                        <img src="img/HEADER/NoTab.svg" alt="NoTab">
+                    </a>
+                </div>
+                <div class="login">
+                    <a class="login__image">
+                        <img src="img/HEADER/login.svg" alt="">
+                    </a>
+                    <a href="#" class="login__text">Login</a>
+                </div>
             </div>
-            <div class="header__login">
-                <a class="header__login__image">
-                    <img src="img/HEADER/login.svg" alt="">
-                </a>
-                <a href="#" class="header__login__text">Login</a>
-            </div>
-
-
-
         </header>
 
         <main class="main">
@@ -42,45 +39,41 @@
                 </div>
 
             </div>
-
-            <section class="main__greeting__container">
-
-                <div class="main__greeting__left">
-                    <div class="main__greeting__title">
-                        A platform <br>
-                        that works smarter
-                    </div>
-                    <div class="main__greeting__description">
-                        <div class="main__greeting__description__image">
-                            <img src="img/background-images/Line.svg" alt="">
+            <section class="greeting">
+                <div class="greeting__container">
+                    <div class="greeting__info">
+                        <div class="greeting__title">
+                            A platform <br>
+                            that works smarter
                         </div>
-                        <div class="main__greeting__description__text">
-                            NoTab allows bars & nightclubs <br>
-                            to manage, understand, and grow <br>
-                            their business from a single dashboard
+                        <div class="greeting__description">
+                            <div class="greeting__description-image">
+                                <img src="img/background-images/Line.svg" alt="">
+                            </div>
+                            <div class="greeting__description-text">
+                                NoTab allows bars & nightclubs <br>
+                                to manage, understand, and grow <br>
+                                their business from a single dashboard
+                            </div>
+                        </div>
+                        <div class="greeting__download">
+                            DOWNLOAD OUR APP
                         </div>
                     </div>
-                    <div class="main__greeting__download">
-                        DOWNLOAD OUR APP
+                    <div class="greeting__image">
+                        <img class="greeting__phone" src="img/MAIN/Greeting/phone.svg" alt="phone">
+                        <div class="greeting__phone-border"></div>
+                        <div class="greeting__button">
+                            <img src="img/MAIN/Greeting/buttons.svg" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="main__greeting__image">
-                    <img class="main__greeting__phone" src="img/MAIN/Greeting/phone.svg" alt="phone">
-                    <div class="main__greeting__phone__border"></div>
-                    <div class="main__greeting__button">
-                        <img src="img/MAIN/Greeting/buttons.svg" alt="">
-                    </div>
-                </div>
-
-
             </section>
             <section class="cookies">
                 <div class="cookies__text">
                     We use cookie to improve your experience on our site. By using our site you consent cookies.
                 </div>
-                <button class="cookies__button">
-                    OK
-                </button>
+                <button class="cookies__button" type="submit">OK</button>
             </section>
             <section class="mission">
                 <div class="mission__authorization">
@@ -133,23 +126,25 @@
                     </div>
                 </div>
             </section>
-            <section class="integration__container">
-                <div class="integration__info info">
-                    <div class="integration__title title">BI Tool Integration</div>
-                    <div class="integration__description description">
-                        We use Business Intelligence Tool that allows you
-                        to be updated what is happening in your business just by one click. Track revenue
-                        and profit by one click.
+            <section class="integration">
+                <div class="integration__container">
+                    <div class="integration__info info">
+                        <div class="integration__title title">BI Tool Integration</div>
+                        <div class="integration__description description">
+                            We use Business Intelligence Tool that allows you
+                            to be updated what is happening in your business just by one click. Track revenue
+                            and profit by one click.
+                        </div>
                     </div>
-                </div>
-                <div class="integration__images">
-                    <img class="years" src="img/MAIN/Integration/years.png" alt="">
-                    <img class="pacman" src="img/MAIN/Integration/pacman.png" alt="">
-                    <img class="bulb" src="img/MAIN/Integration/bulb.png" alt="">
-                    <img class="months" src="img/MAIN/Integration/months.png" alt="">
-                    <img class="blue-hills" src="img/MAIN/Integration/blue-hills.png" alt="">
-                    <img class="data08" src="img/MAIN/Integration/data08.png" alt="">
-                    <img class="data01" src="img/MAIN/Integration/data01.png" alt="">
+                    <div class="integration__images">
+                        <img class="years" src="img/MAIN/Integration/years.png" alt="">
+                        <img class="pacman" src="img/MAIN/Integration/pacman.png" alt="">
+                        <img class="bulb" src="img/MAIN/Integration/bulb.png" alt="">
+                        <img class="months" src="img/MAIN/Integration/months.png" alt="">
+                        <img class="blue-hills" src="img/MAIN/Integration/blue-hills.png" alt="">
+                        <img class="data08" src="img/MAIN/Integration/data08.png" alt="">
+                        <img class="data01" src="img/MAIN/Integration/data01.png" alt="">
+                    </div>
                 </div>
             </section>
             <section class="qr">
@@ -175,7 +170,7 @@
             <section class="generate">
                 <div class="generate__back"></div>
                 <div class="generate__body">
-                    <div class="generate__logo"></div>
+                    <div class="generate__notab"></div>
                     <img class="generate__arrow" src="img/MAIN/Generate/Arrow.png" alt="">
                     <div class="generate__phone">
                         <img class="generate__img" src="img/MAIN/Generate/phone.png" alt="">
@@ -205,8 +200,59 @@
                     <div class="easier__skip">Skip the line</div>
                 </div>
             </section>
+            <section class="noTab">
+                <div class="noTab__phone">
+                    <img class="noTab__border" src="/img/MAIN/Notab/noTab-border.png" alt="">
+                    <div class="noTab__img"></div>
+                </div>
+            </section>
+            <section class="get">
+                <div class="get__back-top"></div>
+                <div class="get__back-right"></div>
+                <div class="get__info info">
+                    <div class="get__title title">
+                        Get In Touch
+                    </div>
+                    <div class="get__description description">
+                        Have questions about Noble or just want to say hello?<br>
+                        Drop us a line and a member of our team will getback to you shortly.
+                    </div>
+                </div>
+                <div class="form">
+                    <input class="form__input" type="text" placeholder="Name" name="name">
+                    <input class="form__input" type="text" placeholder="Venue-name" name="venue-name">
+                    <div class="form__city">
+                        <input class="form__city-venue" type="text" placeholder="Venue-city" name="venue-city">
+                        <input class="form__city-state" type="text" placeholder="State-city" name="state-city">
+                    </div>
+                    <input class="form__input" type="text" placeholder="Email" name="email">
+                    <input class="form__input" type="text" placeholder="Subject" name="subject">
+                    <textarea class="form__message" placeholder="Message" name="message"></textarea>
+                </div>
+                <button class="get__button" type="submit">Send</button>
+            </section>
+            <section class="download">
+                <div class="download__text">DOWNLOAD OUR APP</div>
+                <img src="/img/MAIN/Download/download.png" alt="">
+            </section>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="footer__back"></div>
+            <div class="footer__container">
+                <div class="footer__info">
+                    <div class="footer__title">
+                        <img src="/img/Footer/NOTAB.svg" alt="">
+                    </div>
+                    <div class="footer__contacts">Contact us:<br> support@notab.com</div>
+                    <div class="footer__copyright">&copy; 2020 - NoTab&reg;</div>
+                </div>
+                <div class="footer__agreements">
+                    <div class="footer__terms">Terms to use</div>
+                    <div class="footer__privacy">Privacy policy</div>
+                </div>
+
+            </div>
+        </footer>
     </div>
     <script src="js/script.js"></script>
 </body>

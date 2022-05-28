@@ -2,7 +2,7 @@
 @import "reset.scss";
 
 // -FONTS------------------------------------------------------------------------------
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:wght@400;500;700&family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:wght@400;500;700;800&family=Roboto:wght@500;700&display=swap');
 
 .wrapper {
     // max-width: 1440px;
@@ -37,8 +37,13 @@ body {
 @import "main/sections/greeting.scss";
 @import "main/sections/cookies.scss";
 @import "main/sections/mission.scss";
-@import"main/sections/id.scss";
+@import "main/sections/id.scss";
 @import "main/sections/integration.scss";
 @import "main/sections/qr.scss";
 @import "main/sections/generate.scss";
 @import "main/sections/easier.scss";
+@import "main/sections/noTab.scss";
+@import "main/sections/get.scss";
+@import "main/sections/download.scss";
+// -FOOTER------------------------------------------------------------------------------
+@import "footer.scss";

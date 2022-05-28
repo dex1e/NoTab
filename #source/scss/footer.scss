@@ -1,0 +1,52 @@
+.footer {
+    position: relative;
+    flex: 0 0 auto;
+
+    &__back {
+        position: absolute;
+        left: -3.22%;
+        top: -97.12%;
+        z-index: -1;
+        width: 405.99px;
+        height: 411.6px;
+        background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%) no-repeat;
+        opacity: 0.8;
+        filter: blur(250px);
+        transform: rotate(5.78deg);
+    }
+
+
+    &__container {
+        margin-bottom: 85.85px;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Noto Sans';
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 25px;
+
+        .footer__info {
+            .footer__title {
+                margin-bottom: 16px;
+            }
+
+            .footer__contacts {
+                font-weight: 500;
+                margin-bottom: 19.15px;
+            }
+            .footer__copyright {
+                
+            }
+        }
+
+        .footer__agreements {
+            .footer__terms {
+                margin-bottom: 25px;
+            }
+
+            .footer__privacy {}
+        }
+
+        
+    }
+}

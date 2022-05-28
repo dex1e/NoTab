@@ -1,59 +1,61 @@
-.integration__container {
-    display: flex;
-    // justify-content: space-between;
-    margin-bottom: 452px;
-}
+.integration {
+    &__container {
+        display: flex;
+        // justify-content: space-between;
+        margin-bottom: 452px;
 
-.integration__info {
-    flex: 0 1 497px;
-}
+        .integration__info {
+            flex: 0 1 497px;
 
-.integration__title {}
+            .integration__title {}
 
-.integration__description {
-    max-width: 395px;
-}
+            .integration__description {
+                max-width: 395px;
+            }
+        }
 
-.integration__images {
-    .years {
-        position: absolute;
-        left: 934.26px;
-        top: 3809px;
-    }
+        .integration__images {
+            .years {
+                position: absolute;
+                left: 934.26px;
+                top: 3809px;
+            }
 
-    .pacman {
-        position: absolute;
-        left: 754px;
-        top: 3993px;
-    }
+            .pacman {
+                position: absolute;
+                left: 754px;
+                top: 3993px;
+            }
 
-    .bulb {
-        position: absolute;
-        left: 1058.36px;
-        top: 3991.49px;
-    }
+            .bulb {
+                position: absolute;
+                left: 1058.36px;
+                top: 3991.49px;
+            }
 
-    .months {
-        position: absolute;
-        left: 622px;
-        top: 4058.81px;
-    }
+            .months {
+                position: absolute;
+                left: 622px;
+                top: 4058.81px;
+            }
 
-    .blue-hills {
-        position: absolute;
-        left: 876.68px;
-        top: 4101.8px;
-    }
+            .blue-hills {
+                position: absolute;
+                left: 876.68px;
+                top: 4101.8px;
+            }
 
-    .data08 {
-        position: absolute;
-        left: 803.68px;
-        top: 4202.37px;
-    }
+            .data08 {
+                position: absolute;
+                left: 803.68px;
+                top: 4202.37px;
+            }
 
-    .data01 {
-        position: absolute;
-        left: 1044px;
-        top: 4275px;
+            .data01 {
+                position: absolute;
+                left: 1044px;
+                top: 4275px;
+            }
+        }
     }
 }

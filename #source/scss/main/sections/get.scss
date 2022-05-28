@@ -1,0 +1,117 @@
+%get-border {
+    border: 1px solid #5C5C5C;
+    border-radius: 10px;
+}
+
+.get {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__back-top {
+        position: absolute;
+        top: -50px;
+        left: 345px;
+        z-index: -1;
+        width: 247.04px;
+        height: 250.45px;
+        background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+        filter: blur(250px);
+        transform: rotate(5.78deg);
+    }
+
+    &__back-right {
+        position: absolute;
+        bottom: 5.86%;
+        right: -8%;
+        z-index: -1;
+        width: 336.78px;
+        height: 341.42px;
+        background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+        opacity: 0.9;
+        filter: blur(250px);
+        transform: rotate(5.78deg);
+    }
+
+    &__info {
+        margin: 13px 0 82px 0;
+        text-align: center;
+    }
+
+    .form {
+        max-width: 818px;
+        margin: 0 auto;
+
+        input::placeholder {
+            //    padding-left: 23px;
+            font-family: 'Noto Sans';
+            font-weight: 400;
+            line-height: 25px;
+            color: #BFBFBF;
+        }
+
+        &__input {
+            padding-left: 23px;
+            width: 100%;
+            height: 83px;
+            border: 1px solid #5C5C5C;
+            margin-bottom: 23px;
+            @extend %get-border
+        }
+
+        &__city {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 23px;
+
+            input {
+                padding-left: 23px;
+                width: 397px;
+                height: 83px;
+                @extend %get-border;
+            }
+
+            &-venue {
+                margin-right: 24px;
+            }
+        }
+
+        &__message {
+            padding: 26px 23px;
+            width: 100%;
+            min-height: 199px;
+            resize: vertical;
+            @extend %get-border;
+
+            &::placeholder {
+                font-family: 'Noto Sans';
+                font-weight: 400;
+                line-height: 25px;
+                color: #BFBFBF;
+            }
+        }
+    }
+
+    &__button {
+        margin: 60px auto 91px auto;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #fff;
+        background: #000000;
+        border: 1px solid #FFFFFF;
+        border-radius: 10px;
+        width: 398px;
+        min-height: 60px;
+
+        &:hover {
+            color: rgb(0, 153, 255);
+            border: 0.5px solid rgb(0, 153, 255);
+        }
+    }
+}

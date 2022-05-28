@@ -1,34 +1,34 @@
 .id {
     background: url("/img/MAIN/id/back_blur.png") no-repeat, url("/img/MAIN/id/background.png") no-repeat;
     background-size: 100vw;
-}
 
-.id__content {
-    margin: 467px 0 293.85px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    &__content {
+        margin: 467px 0 293.85px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-.id__phones {
-    display: flex;
-    margin-left: 100px;
-}
+    .id__phones {
+        display: flex;
+        margin-left: 100px;
 
-.id__phone-left {
-    margin-right: 49.44px;
-}
+        .id__phone-left {
+            margin-right: 49.44px;
+        }
 
-.id__phone-right {}
+        .id__phone-right {}
+    }
 
-.id__info {
-    margin: 0 107px 74.15px 0;
-    flex: 0 1 400px;
-    align-self: flex-end;
-}
+    .id__info {
+        margin: 0 107px 74.15px 0;
+        flex: 0 1 400px;
+        align-self: flex-end;
 
-.id__title {}
+        .id__title {}
 
-.id__description {
-    max-width: 316px;
+        .id__description {
+            max-width: 316px;
+        }
+    }
 }

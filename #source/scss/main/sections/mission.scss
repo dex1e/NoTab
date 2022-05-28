@@ -56,24 +56,26 @@
     flex: 0 1 358px;
 }
 
+
+.mission__title {}
+
+
+
+.mission__description {
+    max-width: 315px;
+}
+
+
 .info {
     display: flex;
     flex-direction: column;
 }
-
-.mission__title {}
-
 .title {
     margin-bottom: 23px;
     font-weight: 700;
     font-size: 51px;
     line-height: 62px;
 }
-
-.mission__description {
-    max-width: 315px;
-}
-
 .description {
     font-family: 'Noto Sans';
     font-weight: 400;

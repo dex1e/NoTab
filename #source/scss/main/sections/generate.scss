@@ -22,8 +22,8 @@
     &__body {
         margin-bottom: 79.85px;
 
-        .generate__logo {
-            background: url("/img/MAIN/Generate/noTab.png") no-repeat;
+        .generate__notab {
+            background: url("/img/MAIN/Generate/noTab.png") top/100% no-repeat;
             position: absolute;
             z-index: -1;
             top: 110px;
@@ -31,6 +31,12 @@
             bottom: 0;
             right: 0;
             margin-bottom: 50px;
+        }
+
+        .generate__arrow {
+            position: absolute;
+            top: 200px;
+            left: 950px;
         }
 
         .generate__phone {
@@ -47,11 +53,7 @@
             }
         }
 
-        .generate__arrow {
-            position: absolute;
-            top: 200px;
-            left: 950px;
-        }
+
     }
 
     &__container {

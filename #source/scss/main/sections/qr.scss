@@ -1,4 +1,5 @@
 .qr {
+    position: relative;
     background:
         url("/img/MAIN/QR/back-blur.png") 0 0/100vw 682px no-repeat,
         url("/img/MAIN/QR/dj-back.png") top left/auto no-repeat,
@@ -7,8 +8,10 @@
 
     &__nightlife {
         position: absolute;
-        left: 1199px;
-        top: 4567.81px;
+        // left: 1199px;
+        top: 0;
+        right: 8%;
+        // top: 4567.81px;
         transform: rotate(-12.84deg);
     }
 
@@ -32,21 +35,20 @@
         }
 
         .qr__phones {
+
             // margin-right: 56.44px;
             // display: flex;
 
             .qr__phone-top {
-                // margin-right: 80.44px;
                 position: absolute;
-                left: 638px;
-                top: 4774px;
+                top: 17%;
+                right: 32%;
             }
 
             .qr__phone-bottom {
                 position: absolute;
-                left: 1051px;
-                top: 5115px;
-
+                bottom: 4%;
+                right: 5%;
             }
         }
 

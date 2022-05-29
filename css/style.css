@@ -156,7 +156,7 @@ body {
   color: white;
 }
 .header .header__container .login__text:hover {
-  color: #0099ff;
+  color: rgb(0, 153, 255);
 }
 
 .main {
@@ -172,38 +172,26 @@ body {
           flex-direction: column;
 }
 
-.background {
-  width: 100vw;
+.greeting {
+  position: relative;
 }
-
-.background__big__glow {
+.greeting__back {
   position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-filter: brightness(1.25) contrast(175%);
-          filter: brightness(1.25) contrast(175%);
-  z-index: 2;
+  top: -23%;
+  right: -1.3%;
+  z-index: -2;
+  width: 662.63px;
+  height: 783.03px;
+  background: rgba(250, 0, 255, 0.2);
+  -webkit-filter: blur(150px);
+          filter: blur(150px);
+  -webkit-transform: rotate(-105.26deg);
+          transform: rotate(-105.26deg);
 }
-
-.background__little__glow {
-  position: absolute;
-  width: 125px;
-  height: 125px;
-  left: 93px;
-  top: 470px;
-  background: rgba(96, 92, 234, 0.5);
-  -webkit-filter: blur(50px);
-          filter: blur(50px);
-}
-
 .greeting__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -217,7 +205,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 154px 0 0 0;
-  min-width: 60%;
 }
 .greeting__container .greeting__info .greeting__title {
   font-weight: 700;
@@ -225,34 +212,45 @@ body {
   line-height: 109%;
 }
 .greeting__container .greeting__info .greeting__description {
+  margin-top: 88px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.greeting__container .greeting__info .greeting__description-back {
+  position: absolute;
+  bottom: 15.3%;
+  left: -1%;
+  width: 125px;
+  height: 125px;
+  background: rgba(96, 92, 234, 0.5);
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
 }
 .greeting__container .greeting__info .greeting__description-image {
-  padding: 88px 31px 0 0;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 139.43px;
-          flex: 0 0 139.43px;
-  height: 0;
+  margin: 0 31px 0 0;
 }
 .greeting__container .greeting__info .greeting__description-text {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  margin: 129px 0 0 0;
   font-family: "Noto Sans";
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
 }
 .greeting__container .greeting__info .greeting__download {
-  margin: 267px 0 15px 0;
+  margin: 267px 0 0px 0;
   font-weight: 700;
   font-size: 35px;
-  line-height: 70px;
 }
 .greeting__container .greeting__image {
+  margin: 29px 84px 0 0;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,31 +264,25 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  padding-left: 84px;
 }
 .greeting__container .greeting__image .greeting__phone {
-  margin-top: 29px;
-  width: 332.88px;
-  height: 667.8px;
-  z-index: 4;
+  max-width: 333px;
+  max-height: 668px;
 }
-.greeting__container .greeting__image .greeting__phone-border {
+.greeting__container .greeting__image .greeting__phone-back {
   position: absolute;
+  top: 2%;
+  left: -3%;
   width: 307.77px;
   height: 631.35px;
-  margin-top: calc(100% - (100% - 38.6px));
   background: #000;
-  opacity: 0.7;
+  opacity: 0.4;
   -webkit-filter: blur(71.6833px);
           filter: blur(71.6833px);
-  z-index: 3;
+  z-index: -1;
 }
-.greeting__container .greeting__image .greeting__button {
-  margin-bottom: 24.67px;
-}
-
 .cookies {
+  margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,8 +324,8 @@ body {
   text-align: center;
 }
 .cookies__button:hover {
-  color: #0099ff;
-  border: 0.5px solid #0099ff;
+  color: rgb(0, 153, 255);
+  border: 0.5px solid rgb(0, 153, 255);
 }
 
 .mission__authorization {
@@ -362,7 +354,7 @@ body {
   color: #fff;
 }
 .link a:hover {
-  color: #0099ff;
+  color: rgb(0, 153, 255);
 }
 
 .border {
@@ -386,15 +378,11 @@ body {
   border-radius: 21.3671px;
 }
 
-.mission__body {
+.mission__content {
   margin: 246px 0 283px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -439,21 +427,13 @@ body {
 }
 
 .id {
-  background: url("/img/MAIN/id/back_blur.png") no-repeat, url("/img/MAIN/id/background.png") no-repeat;
-  background-size: 100vw;
+  background: url("/img/MAIN/id/back_blur.png") top/100% no-repeat, url("/img/MAIN/id/background.png") top/100% no-repeat;
 }
 .id__content {
   margin: 467px 0 293.85px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .id .id__phones {
   display: -webkit-box;
@@ -465,7 +445,7 @@ body {
   margin-right: 49.44px;
 }
 .id .id__info {
-  margin: 0 107px 74.15px 0;
+  margin: 0 0 74.15px 128px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 400px;
           flex: 0 1 400px;
@@ -477,9 +457,7 @@ body {
 }
 
 .integration__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
   margin-bottom: 452px;
 }
 .integration__container .integration__info {
@@ -490,49 +468,51 @@ body {
 .integration__container .integration__info .integration__description {
   max-width: 395px;
 }
-.integration__container .integration__images .years {
+.integration__container .images__years {
   position: absolute;
-  left: 934.26px;
-  top: 3809px;
+  bottom: 60%;
+  right: 16.3%;
 }
-.integration__container .integration__images .pacman {
+.integration__container .images__pacman {
   position: absolute;
-  left: 754px;
-  top: 3993px;
+  top: 54%;
+  right: 30%;
 }
-.integration__container .integration__images .bulb {
+.integration__container .images__bulb {
   position: absolute;
-  left: 1058.36px;
-  top: 3991.49px;
+  top: 54%;
+  right: 12.3%;
 }
-.integration__container .integration__images .months {
+.integration__container .images__months {
   position: absolute;
-  left: 622px;
-  top: 4058.81px;
+  top: 92%;
+  right: 40%;
 }
-.integration__container .integration__images .blue-hills {
+.integration__container .images__blue-hills {
   position: absolute;
-  left: 876.68px;
-  top: 4101.8px;
+  bottom: -80%;
+  right: 24%;
 }
-.integration__container .integration__images .data08 {
+.integration__container .images__data08 {
   position: absolute;
-  left: 803.68px;
-  top: 4202.37px;
+  bottom: -136%;
+  right: 30%;
+  z-index: -1;
 }
-.integration__container .integration__images .data01 {
+.integration__container .images__data01 {
   position: absolute;
-  left: 1044px;
-  top: 4275px;
+  bottom: -148%;
+  right: 6%;
 }
 
 .qr {
+  position: relative;
   background: url("/img/MAIN/QR/back-blur.png") 0 0/100vw 682px no-repeat, url("/img/MAIN/QR/dj-back.png") top left/auto no-repeat, url("/img/MAIN/QR/drink-back.png") top right/auto no-repeat, url("/img/MAIN/QR/Nightlife-back.png") top right no-repeat;
 }
 .qr__nightlife {
   position: absolute;
-  left: 1199px;
-  top: 4567.81px;
+  top: 0;
+  right: 8%;
   -webkit-transform: rotate(-12.84deg);
           transform: rotate(-12.84deg);
 }
@@ -558,13 +538,13 @@ body {
 }
 .qr__content .qr__phones .qr__phone-top {
   position: absolute;
-  left: 638px;
-  top: 4774px;
+  top: 17%;
+  right: 32%;
 }
 .qr__content .qr__phones .qr__phone-bottom {
   position: absolute;
-  left: 1051px;
-  top: 5115px;
+  bottom: 4%;
+  right: 5%;
 }
 
 .generate {
@@ -589,36 +569,32 @@ body {
   -webkit-transform: rotate(-0.55deg);
           transform: rotate(-0.55deg);
 }
-.generate__body {
-  margin-bottom: 79.85px;
-}
-.generate__body .generate__notab {
-  background: url("/img/MAIN/Generate/noTab.png") top/100% no-repeat;
+.generate__notab {
+  background: url("/img/MAIN/Generate/noTab.png") center/100% no-repeat;
   position: absolute;
   z-index: -1;
-  top: 110px;
+  top: -149px;
   left: 0;
   bottom: 0;
   right: 0;
   margin-bottom: 50px;
 }
-.generate__body .generate__arrow {
+.generate__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 79.85px;
+}
+.generate__content .generate__arrow {
   position: absolute;
   top: 200px;
   left: 950px;
 }
-.generate__body .generate__phone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 563px;
-}
-.generate__body .generate__phone .generate__text {
-  margin-left: 129.44px;
+.generate__content .generate__phone .generate__text {
   margin-bottom: 66px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -743,7 +719,7 @@ body {
 }
 
 .noTab {
-  background: url("/img/MAIN/Notab/back.png") center/100% no-repeat;
+  background: url("/img/MAIN/Notab/back.png") top center/100vw no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -937,8 +913,8 @@ body {
   min-height: 60px;
 }
 .get__button:hover {
-  color: #0099ff;
-  border: 0.5px solid #0099ff;
+  color: rgb(0, 153, 255);
+  border: 0.5px solid rgb(0, 153, 255);
 }
 
 .download {

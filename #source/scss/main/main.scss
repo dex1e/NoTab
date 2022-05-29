@@ -5,25 +5,24 @@
 }
 
 
-.background {
-    width: 100vw;
-}
+// .background {
+//     width: 100vw;
+//     .background__big__glow {
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         filter: brightness(1.25) contrast(175%);
+//         z-index: 2;
+//     }
+    
+//     .background__little__glow {
+//         position: absolute;
+//         width: 125px;
+//         height: 125px;
+//         left: 93px;
+//         top: 470px;
+//         background: rgba(96, 92, 234, 0.5);
+//         filter: blur(50px);
+//     }
+// }
 
-.background__big__glow {
-    position: absolute;
-    top: 0;
-    right: 0;
-    filter: brightness(1.25) contrast(175%);
-    z-index: 2;
-}
-
-.background__little__glow {
-    position: absolute;
-    width: 125px;
-    height: 125px;
-    left: 93px;
-    top: 470px;
-
-    background: rgba(96, 92, 234, 0.5);
-    filter: blur(50px);
-}

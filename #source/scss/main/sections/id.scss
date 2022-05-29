@@ -1,12 +1,14 @@
 .id {
-    background: url("/img/MAIN/id/back_blur.png") no-repeat, url("/img/MAIN/id/background.png") no-repeat;
-    background-size: 100vw;
+    // background: url("/img/MAIN/id/back_blur.png") no-repeat, url("/img/MAIN/id/background.png") no-repeat;
+    background: url("/img/MAIN/id/back_blur.png") top/100% no-repeat, url("/img/MAIN/id/background.png") top/100% no-repeat;
+    
+    // background-size: 100vw;
+  
 
     &__content {
         margin: 467px 0 293.85px 0;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        // justify-content: space-between;
     }
 
     .id__phones {
@@ -21,7 +23,8 @@
     }
 
     .id__info {
-        margin: 0 107px 74.15px 0;
+        // margin: 0 107px 74.15px 0;
+        margin: 0 0 74.15px 128px;
         flex: 0 1 400px;
         align-self: flex-end;
 

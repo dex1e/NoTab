@@ -15,85 +15,175 @@
 
     &__container {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
 
-        .greeting__info {
+        .greeting__content {
+            margin-top: 29px;
             display: flex;
-            flex-direction: column;
-            margin: 154px 0 0 0;
-            // min-width: 60%;
+            justify-content: space-between;
 
-            .greeting__title {
-                font-weight: 700;
-                font-size: 64px;
-                line-height: 109%;
+            .greeting__info {
+                display: flex;
+                flex-direction: column;
+                margin: 154px 15px 0 0;
+
+                .greeting__title {
+                    font-weight: 700;
+                    // font-size: calc(100vw * 0.0444);
+                    // font-size: 64px;
+                    font-size: 4.444vw;
+                    line-height: 109%;
+
+                    // line-height: 70px;
+                    @media (max-width: 767.98px) {
+                        line-height: 40px;
+                        font-size: 35px;
+                    }
+                }
+
+                .greeting__description {
+                    margin-top: 88px;
+                    position: relative;
+                    display: flex;
+                    align-items: flex-end;
+
+                    @media (max-width: 1023.98px) {
+                        margin-top: 38px;
+                    }
+
+                    @media (max-width: 767.98px) {
+                        margin-top: 24px;
+                    }
+
+                    &-back {
+                        position: absolute;
+                        bottom: 15.3%;
+                        left: -1%;
+                        width: 125px;
+                        height: 125px;
+                        background: rgba(96, 92, 234, 0.5);
+                        filter: blur(50px);
+                    }
+
+                    &-image {
+                        @media (max-width: 767.98px) {
+                            display: none;
+                        }
+                    }
+
+                    &-text {
+                        margin-left: 31px;
+                        flex: 0 1 380px;
+                        font-family: 'Noto Sans';
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 27px;
+
+                        @media (max-width: 1023.98px) {
+                            max-width: 240px;
+                            margin-left: 10px;
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+
+                        @media (max-width: 767.98px) {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+
             }
 
-            .greeting__description {
-                margin-top: 88px;
+            .greeting__image {
+                margin-right: 84.12px;
                 position: relative;
                 display: flex;
-                align-items: flex-end;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
-                &-back {
+                // width: 100%;
+                @media (max-width: 1023.98px) {
+                    margin-right: 44px;
+                }
+
+                @media (max-width: 767.98px) {
+                    margin-right: 0;
+                }
+
+
+                .greeting__phone {
+                    // width: 23.125vw;
+                    // min-width: 161px;
+                    max-width: 333px;
+                    max-height: 668px;
+
+                    // object-fit: cover;
+                    // max-height: 668px;
+                    // min-height: 323px;
+                    // object-fit: 100%;
+                    @media (max-width: 1023.98px) {
+                        max-width: 250px;
+                        max-height: 468px;
+                    }
+
+                    @media (max-width: 536px) {
+                        max-width: 161px;
+                        max-height: 323px;
+                    }
+                }
+
+                .greeting__phone-back {
                     position: absolute;
-                    bottom: 15.3%;
-                    left: -1%;
-                    width: 125px;
-                    height: 125px;
-                    background: rgba(96, 92, 234, 0.5);
-                    filter: blur(50px);
+                    top: 2%;
+                    left: -3%;
+                    width: 307.77px;
+                    height: 631.35px;
+                    background: #000;
+                    opacity: 0.4;
+                    filter: blur(71.6833px);
+                    z-index: -1;
                 }
-
-                &-image {
-                    margin: 0 31px 0 0;
-                }
-
-                &-text {
-                    flex: 1 1 auto;
-                    font-family: 'Noto Sans';
-                    font-weight: 400;
-                    font-size: 20px;
-                    line-height: 27px;
-                }
-            }
-
-            .greeting__download {
-                margin: 267px 0 0px 0;
-                font-weight: 700;
-                font-size: 35px;
             }
         }
 
-        .greeting__image {
-            margin: 29px 84px 0 0;
-            position: relative;
+        .greeting__download {
             display: flex;
-            flex-direction: column;
             justify-content: space-between;
-            align-items: center;
-            // width: 100%;
+            padding-top: 74.2px;
 
-
-            .greeting__phone {
-                max-width: 333px;
-                max-height: 668px;
+            @media (max-width: 1023.98px) {
+                padding-top: 55.01px;
+                flex-direction: column;
+                //   justify-content: center;
+                align-items: center;
             }
 
-            .greeting__phone-back {
-                position: absolute;
-                top: 2%;
-                left: -3%;
-                width: 307.77px;
-                height: 631.35px;
-                background: #000;
-                opacity: 0.4;
-                filter: blur(71.6833px);
-                z-index: -1;
+            @media (max-width: 767.98px) {
+                flex-direction: column;
+                // justify-content: center;
+                align-items: center;
             }
 
-            .greeting__button {
-          
+            &-text {
+                // font-size: 2.43vw;
+                font-size: 35px;
+                font-weight: 700;
+
+                @media (max-width: 1023.98px) {
+                    font-size: 30px;
+                }
+
+                @media (max-width: 767.98px) {
+                    font-size: 24px;
+                }
+            }
+
+            &-button {
+                img {
+                    margin-right: 4.5vw;
+                }
             }
         }
     }

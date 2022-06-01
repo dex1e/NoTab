@@ -1,38 +1,59 @@
 .header {
+    margin: 23px 0 0 0;
+
+    @media (max-width:440px) {
+        margin-top: 40px;
+    }
+
     .header__container {
         display: flex;
-        flex-direction: row;
-        width: 100%;
-        margin: 23px 0 0 0;
+        justify-content: flex-start;
+
+        @media (max-width:440px) {
+            justify-content: space-between;
+        }
 
         .logo {
             display: flex;
-            margin: 0 108px 0 0;
             align-items: center;
 
             &__image {
-                width: 107px;
-                height: 109px;
-                margin: 0 8px 0 0;
+                @media (max-width:440px) {
+                    width: 51.73px;
+                    height: 52.69px;
+                }
             }
 
             &__text {
-                width: 96px;
-                height: 24.75px;
+                padding-left: 8px;
+
+                @media (max-width:440px) {
+                    padding-left: 3.87px;
+                    img {
+                        min-width: 46.41px;
+                        height: 11.96px;
+                    }
+                }
             }
         }
 
         .login {
+            margin-left: 108px;
             display: flex;
             align-items: center;
 
+            @media (max-width:440px) {
+                margin-left: 0;
+            }
+
             &__image {
-                width: 26px;
-                height: 25px;
-                margin: 0 12px 0 0;
+                @media (max-width:440px) {
+                    display: none;
+                }
             }
 
             &__text {
+                margin-left: 12px;
                 font-family: 'Noto Sans';
                 font-weight: 500;
                 line-height: 25px;
@@ -40,6 +61,16 @@
 
                 &:hover {
                     color: rgb(0, 153, 255);
+                }
+
+                @media (max-width:440px) {
+                    font-size: 14px;
+                    line-height: 19px;
+                    text-decoration: none;
+                    border-bottom: 1px #fff solid;
+                    margin-left: 0;
+                    width: 38px;
+                    height: 25px;
                 }
             }
         }

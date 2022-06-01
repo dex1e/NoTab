@@ -1,7 +1,11 @@
 .footer {
+    margin-top: 94px;
+    margin-bottom: 85.85px;
     position: relative;
     flex: 0 0 auto;
-
+    @media(max-width: 767.98px) {
+        margin: 0 0 24px 0;
+    }
     // &__back {
     //     position: absolute;
     //     left: -3.22%;
@@ -17,37 +21,70 @@
 
 
     &__container {
-        margin-top: 94px;
-        margin-bottom: 85.85px;
+
         display: flex;
+        flex-direction: row-reverse;
         justify-content: space-between;
         font-family: 'Noto Sans';
         font-weight: 800;
         font-size: 18px;
         line-height: 25px;
 
-        .footer__info {
-            .footer__title {
-                margin-bottom: 16px;
-            }
-
-            .footer__contacts {
-                font-weight: 500;
-                margin-bottom: 19.15px;
-            }
-            .footer__copyright {
-                
-            }
+        @media(max-width: 767.98px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .footer__agreements {
-            .footer__terms {
-                margin-bottom: 25px;
+
+            .footer__terms {}
+
+            .footer__privacy {
+                margin-top: 25px;
+
+                @media(max-width: 767.98px) {
+                    margin-top: 14px;
+                }
             }
 
-            .footer__privacy {}
         }
 
-        
+        .footer__info {
+
+
+
+            @media(max-width: 767.98px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 58px;
+                font-size: 14px;
+                line-height: 19px;
+            }
+
+            .footer__title {}
+
+            .footer__contacts {
+                max-width: 171px;
+                // flex: 0 0 171px;
+                margin-top: 15.85px;
+                font-weight: 500;
+
+
+                @media(max-width: 767.98px) {
+                    margin-top: 16.84px;
+                    max-width: 216px;
+                }
+            }
+
+            .footer__copyright {
+                margin-top: 19.15px;
+
+                @media(max-width: 767.98px) {
+                    margin-top: 9px;
+                }
+            }
+        }
     }
 }

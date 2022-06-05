@@ -3,6 +3,8 @@
 
 // -FONTS------------------------------------------------------------------------------
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:wght@400;500;700;800&family=Roboto:wght@500;700&display=swap');
+// -VARS------------------------------------------------------------------------------
+@import "vars.scss";
 
 .wrapper {
     // max-width: 1440px;
@@ -48,7 +50,6 @@ body {
 // -MAIN----------------------------------------------------------------
 @import "main/main.scss";
 @import "main/sections/greeting.scss";
-@import "main/sections/cookies.scss";
 @import "main/sections/mission.scss";
 @import "main/sections/id.scss";
 @import "main/sections/integration.scss";

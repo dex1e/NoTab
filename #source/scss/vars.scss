@@ -1,0 +1,28 @@
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 62px;
+
+    @media (max-width: 767.98px) {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
+.description {
+    margin-top: 23px;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+    @media (max-width: 767.98px) {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}

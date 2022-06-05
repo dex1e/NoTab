@@ -1,51 +1,127 @@
 .integration {
+    margin-top: 293.85px;
+    margin-bottom: 275px;
+
+    @media (max-width: 1023.98px) {
+        margin-top: 144.15px;
+        margin-bottom: 440px;
+    }
+
+    @media (max-width: 767.98px) {
+        margin-bottom: 270px;
+    }
 
     &__container {
         position: relative;
+
         // display: flex;
         // justify-content: space-between;
-        margin-bottom: 452px;
+        @media (max-width: 1023.98px) {
+            display: flex;
+            flex-direction: column;
+        }
+
 
         .integration__info {
-            flex: 0 1 497px;
+            @media (max-width: 1023.98px) {
+                align-self: center;
+            }
+
+            @media (max-width: 450px) {
+                align-self: flex-start;
+            }
 
             .integration__title {}
 
             .integration__description {
                 max-width: 395px;
+
+                @media (max-width: 1023.98px) {
+                    // max-width: 338px;
+                }
             }
         }
 
-        .images {
+        .image {
 
-           &__years {
+            &__years {
                 position: absolute;
                 bottom: 60%;
                 right: 16.3%;
+
+                @media (max-width: 1023.98px) {
+                    top: 255%;
+                    left: -6.5%;
+                }
+
+                @media (max-width: 767.98px) {
+                    width: 144.57px;
+                    height: 86px;
+                    top: 210%;
+                    left: -9%;
+                }
             }
 
             &__pacman {
                 position: absolute;
                 top: 54%;
                 right: 30%;
+
+                @media (max-width: 1023.98px) {
+                    top: 155%;
+                    left: 2.903%;
+                }
+
+                @media (max-width: 767.98px) {
+                    width: 109.43px;
+                    height: 21.28px;
+                    left: 10.903%;
+                }
+
             }
 
             &__bulb {
                 position: absolute;
                 top: 54%;
                 right: 12.3%;
+
+                @media (max-width: 1023.98px) {
+                    top: 115%;
+                    left: 70.5%;
+                }
+
+                @media (max-width: 767.98px) {
+                    width: 85.62px;
+                    height: 90.56px;
+                }
             }
 
             &__months {
                 position: absolute;
                 top: 92%;
                 right: 40%;
+
+                @media (max-width: 1023.98px) {
+                    display: none;
+                }
             }
 
             &__blue-hills {
                 position: absolute;
                 bottom: -80%;
                 right: 24%;
+
+                @media (max-width: 1023.98px) {
+                    top: 145%;
+                    left: 45.565%;
+                }
+
+                @media (max-width: 767.98px) {
+                    width: 90.95px;
+                    height: 55.18px;
+                    top: 140%;
+                    left: 50.565%;
+                }
             }
 
             &__data08 {
@@ -53,12 +129,37 @@
                 bottom: -136%;
                 right: 30%;
                 z-index: -1;
+
+                @media (max-width: 1023.98px) {
+                    top: 225%;
+                    left: 20.806%;
+                }
+
+                @media (max-width: 767.98px) {
+                    width: 90.95px;
+                    height: 55.18px;
+                    top: 185%;
+                    left: 33.806%;
+                }
             }
 
             &__data01 {
                 position: absolute;
                 bottom: -148%;
                 right: 6%;
+
+                @media (max-width: 1023.98px) {
+                    top: 280%;
+                    right: 12%;
+
+                }
+
+                @media (max-width: 767.98px) {
+                    width: 296px;
+                    height: 59.18px;
+                    top: 250%;
+                    right: -22%;
+                }
             }
         }
     }

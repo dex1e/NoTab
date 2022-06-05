@@ -1,85 +1,212 @@
 .mission {
-    &__authorization {
-        margin: 61px 177px 0;
+    @media (max-width: 1023.98px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cookies {
+        margin-top: 15px;
         display: flex;
         justify-content: space-between;
-    }
-}
+        align-items: center;
+        background-color: #212834;
+        height: 93px;
 
-.text {
-    padding-bottom: 30px;
-    font-family: 'Noto Sans';
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 41px;
-}
+        @media (max-width: 1023.98px) {
+            order: 3;
+            margin-top: 94.88px;
+            padding: 0 15px;
+        }
 
-.link {
-    a {
-        font-family: 'Noto Sans';
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 33px;
-        color: #fff;
+        &__text {
+            padding-left: 100px;
+            font-family: 'Noto Sans';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
 
-        &:hover {
-            color: rgb(0, 153, 255);
+            @media (max-width: 1023.98px) {
+                padding: 0 4px 0 0;
+                font-size: 12px;
+                line-height: 16px;
+            }
+
+            @media (max-width: 500px) {
+                white-space: pre-line;
+                max-width: 249px;
+            }
+        }
+
+        &__button {
+            margin-right: 24px;
+            cursor: pointer;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            border: 0.5px solid #FFFFFF;
+            border-radius: 6px;
+            width: 132px;
+            height: 50px;
+            font-family: 'Noto Sans';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+
+            @media (max-width: 1023.98px) {
+                margin-right: 0;
+            }
+
+            &:hover {
+                color: rgb(0, 153, 255);
+                border: 0.5px solid rgb(0, 153, 255);
+            }
         }
     }
-}
 
-.border {
-    padding-left: 55px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 503px;
-    height: 312px;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 21.3671px;
-}
+    &__authorization {
+        margin-top: 61px;
+        display: flex;
+        justify-content: center;
 
+        @media (max-width: 1023.98px) {
+            margin-top: 70px;
+            order: 1;
+            flex-direction: column;
+            align-items: center;
+        }
 
-.mission__content {
-    margin: 246px 0 283px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start
-}
+        .mission__border {
+            padding-left: 55px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 503px;
+            height: 312px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 21.3671px;
 
-.mission__phone {}
+            @media (max-width: 1023.98px) {
+                padding-left: 48px;
+                width: 345px;
+                height: 233px;
+            }
+        }
 
-.mission__info {
-    margin-right: 163px;
-    flex: 0 1 358px;
-}
+        .mission__text {
+            font-family: 'Noto Sans';
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 41px;
 
+            @media (max-width: 1023.98px) {
+                font-size: 24px;
+                line-height: 33px;
+            }
+        }
 
-.mission__title {}
+        .mission__link {
+            padding-top: 30px;
 
+            a {
+                font-family: 'Noto Sans';
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 33px;
+                color: #fff;
 
+                @media (max-width: 1023.98px) {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
 
-.mission__description {
-    max-width: 315px;
-}
+                &:hover {
+                    color: rgb(0, 153, 255);
+                }
+            }
+        }
 
+        .mission__contacts {
+            margin-right: 81px;
 
-.info {
-    display: flex;
-    flex-direction: column;
-}
+            @media (max-width: 1023.98px) {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
 
-.title {
-    margin-bottom: 23px;
-    font-weight: 700;
-    font-size: 51px;
-    line-height: 62px;
-}
+    &__content {
+        margin-top: 246px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
 
-.description {
-    font-family: 'Noto Sans';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
+        @media (max-width: 1023.98px) {
+            order: 2;
+            margin-top: 110px;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mission__phone {
+            @media (max-width: 1023.98px) {
+                margin-top: 163px;
+            }
+
+            .mission__phone-left {
+                @media (max-width: 1023.98px) {
+                    display: none;
+                }
+            }
+
+            .mission__phone-center {
+                display: none;
+
+                @media (max-width: 1023.98px) {
+                    display: block;
+                    width: 172.53px;
+                    height: 346.12px;
+                }
+            }
+        }
+
+        .mission__info {
+            position: relative;
+            margin-right: 163px;
+
+            @media (max-width: 1280px) {
+                margin: 0 80px;
+            }
+
+            @media (max-width: 1023.98px) {
+                margin: 0;
+            }
+
+            &-back {
+                position: absolute;
+                right: 21.229%;
+                z-index: -1;
+                background: url("/img/MAIN/Mission/Ellipse-back.png") no-repeat;
+                background: #F101BF;
+                // opacity: 0.7;
+                filter: blur(60px);
+                width: 85px;
+                height: 85px;
+
+                @media (max-width: 1280px) {
+                    left: 0;
+                }
+            }
+
+            .mission__title {
+                max-width: 358px;
+            }
+
+            .mission__description {
+                max-width: 315px;
+            }
+        }
+    }
 }

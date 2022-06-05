@@ -1,37 +1,98 @@
 .id {
-    // background: url("/img/MAIN/id/back_blur.png") no-repeat, url("/img/MAIN/id/background.png") no-repeat;
+    margin-top: 283px;
     background: url("/img/MAIN/id/back_blur.png") top/100% no-repeat, url("/img/MAIN/id/background.png") top/100% no-repeat;
-    
-    // background-size: 100vw;
-  
+
+    @media (max-width: 1320px) {
+        margin-top: 83px;
+    }
+
+    @media (max-width: 1023.98px) {
+        margin-top: 3px;
+    }
 
     &__content {
-        margin: 467px 0 293.85px 0;
+        margin-top: 467px;
         display: flex;
-        // justify-content: space-between;
-    }
+        justify-content: space-between;
 
-    .id__phones {
-        display: flex;
-        margin-left: 100px;
-
-        .id__phone-left {
-            margin-right: 49.44px;
+        @media (max-width: 1320px) {
+            margin-top: 300px;
         }
 
-        .id__phone-right {}
-    }
+        @media (max-width: 1023.98px) {
+            margin-top: 224px;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .id__info {
-        // margin: 0 107px 74.15px 0;
-        margin: 0 0 74.15px 128px;
-        flex: 0 1 400px;
-        align-self: flex-end;
+        .id__phones {
+            display: flex;
+            margin-left: 100px;
 
-        .id__title {}
+            @media (max-width: 1320px) {
+                margin-left: 20px;
+            }
 
-        .id__description {
-            max-width: 316px;
+            @media (max-width: 1023.98px) {
+                flex-direction: column;
+                margin: 70px 0 0 0;
+            }
+
+            .id__phone-left {
+                margin-right: 49.44px;
+
+                @media (max-width: 1320px) {
+                    width: 287.08px;
+                    height: 575.93px;
+                    margin-right: 20px;
+                }
+
+                @media (max-width: 1023.98px) {
+                    margin-right: 0;
+                }
+            }
+
+            .id__phone-right {
+                @media (max-width: 1320px) {
+                    width: 287.08px;
+                    height: 575.93px;
+                }
+
+                @media (max-width: 1023.98px) {
+                    margin-top: 55px;
+                }
+
+            }
+        }
+
+        .id__info {
+            margin: 0 191px 74.15px 0;
+            // flex: 0 1 400px;
+            align-self: flex-end;
+
+            @media (max-width: 1320px) {
+                margin: 0 40px 74.15px 0;
+            }
+
+            @media (max-width: 1023.98px) {
+                margin: 0;
+                align-self: center;
+            }
+
+            .id__title {}
+
+            .id__description {
+                max-width: 316px;
+
+                @media (max-width: 1023.98px) {
+                    max-width: 345px;
+                }
+            }
         }
     }
+
+
+
+
 }

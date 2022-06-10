@@ -3,25 +3,35 @@
     margin-bottom: 85.85px;
     position: relative;
     flex: 0 0 auto;
+
     @media(max-width: 767.98px) {
         margin: 64px 0 24px 0;
     }
-    // &__back {
-    //     position: absolute;
-    //     left: -3.22%;
-    //     top: -97.12%;
-    //     z-index: -1;
-    //     width: 405.99px;
-    //     height: 411.6px;
-    //     background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%) no-repeat;
-    //     opacity: 0.8;
-    //     filter: blur(250px);
-    //     transform: rotate(5.78deg);
-    // }
+
+    &__back {
+        position: absolute;
+        top: -97.12%;
+        left: -3.22%;
+        z-index: -1;
+        width: 405.99px;
+        height: 411.6px;
+        background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%) no-repeat;
+        opacity: 0.5;
+        filter: blur(180px);
+        transform: rotate(5.78deg);
+
+        @media(max-width: 767.98px) {
+            width: 224.67px;
+            height: 227.77px;
+            top: 12.97%;
+            left: -20.75%;
+            filter: blur(88.347px);
+            opacity: 0.5;
+        }
+    }
 
 
     &__container {
-
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;

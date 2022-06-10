@@ -1,8 +1,12 @@
 .download {
-    margin-bottom: 155.36px;
+    margin-top: 91px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width:767.98px) {
+        margin-top: 74px;
+    }
 
     &__text {
         margin-bottom: 32.73px;
@@ -11,5 +15,24 @@
         font-size: 24px;
         line-height: 33px;
         letter-spacing: 0.03em;
+    }
+
+    &__button {
+        display: flex;
+        gap: 59.07px;
+
+        img:hover {
+            @extend %hoverDownload
+        }
+
+        @media (max-width:767.98px) {
+            flex-direction: column;
+            gap: 24px;
+            width: 185px;
+
+            img {
+                height: 60px;
+            }
+        }
     }
 }

@@ -1,14 +1,24 @@
 .noTab {
-    background: url("/img/MAIN/Notab/back.png") top center/100vw no-repeat;
+    background: url("/img/MAIN/Notab/back.png") center/100% 100% no-repeat;
+    width: 100%;
+    height: 1003px;
     display: flex;
     justify-content: center;
+    align-items: center;
     z-index: -1;
+
+    @media (max-width:950px) {
+        display: none;
+    }
 
     &__phone {
         position: relative;
         display: flex;
         justify-content: center;
-        margin: 329px 0 245.84px 0;
+        align-items: center;
+        // margin: 329px 0 245.84px 0;
+
+
 
         .noTab__img {
             background: url("/img/MAIN/Notab/noTab-img.png") center no-repeat;

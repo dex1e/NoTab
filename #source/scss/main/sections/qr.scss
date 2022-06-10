@@ -32,28 +32,6 @@
         }
     }
 
-    .qr__phones-back {
-        display: none;
-
-        // background: url("/img/MAIN/QR/drink-back.png") no-repeat;
-        // position: absolute;
-        // width: 50.903vw;
-        // height: 617px;
-        // top: 0;
-        // right: 0;
-        // z-index: -1;
-        @media (max-width:426px) {
-            display: block;
-            background: url("/img/MAIN/QR/drink-back.png") center/100% no-repeat;
-            width: 352.44px;
-            height: 297px;
-            position: absolute;
-            top: 30%;
-            right: -9%;
-            z-index: -1;
-        }
-    }
-
     &__content {
         margin-top: 220px;
         display: flex;
@@ -63,60 +41,72 @@
         @media (max-width:1130px) {
             margin-top: 227px;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
 
         .qr__info {
-            margin: 0 0 30.67px 181px;
+            margin: 0 0 30.67px 81px;
+            width: 43.387%;
 
             @media (max-width:1330px) {
+                width: 45.387%;
                 margin-bottom: 0;
-                margin-left: 50px;
+                margin-left: 5px;
             }
 
             @media (max-width:1130px) {
+                width: 308px;
                 margin-left: 0;
-
             }
 
-            // flex: 0 1 376px;
+            @media (max-width:400.98px) {
+                min-width: 100%;
+            }
 
             .qr__title {}
 
             .qr__description {
                 max-width: 315px;
+
+                @media (max-width:767.98px) {
+                    white-space: pre-line;
+                }
             }
 
             .qr__button {
                 margin-top: 58px;
                 display: flex;
+                gap: 27.97px;
 
                 @media (max-width:1130px) {
+                    gap: 24px;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
                 }
 
-
-                .qr__button-apple {
-                    margin-right: 27.97px;
+                &-apple {
                     width: 163.53px;
                     height: 51.33px;
 
+                    &:hover {
+                        @extend %hoverDownload
+                    }
+
                     @media (max-width:1130px) {
-                        margin-right: 0;
                         width: 185px;
                         height: 60px;
                     }
                 }
 
-                .qr__button-google {
-                    width: 163.53px;
+                &-google {
+                    width: 184.5px;
                     height: 51.33px;
 
+                    &:hover {
+                        @extend %hoverDownload
+                    }
+
                     @media (max-width:1130px) {
-                        margin-top: 24px;
                         width: 185px;
                         height: 60px;
                     }
@@ -125,14 +115,16 @@
         }
 
         .qr__phones {
-            margin-right: 56.44px;
             display: flex;
+            gap: 80.44px;
 
             @media (max-width:1330px) {
+                gap: 15px;
                 margin-right: 20px;
             }
 
             @media (max-width:1130px) {
+                gap: 0;
                 margin-top: 80px;
                 margin-right: 0;
                 flex-direction: column;
@@ -144,27 +136,13 @@
 
 
             .qr__phone-top {
-                margin-right: 80.44px;
                 width: 332.56px;
                 height: 667.15px;
 
-                @media (max-width:1330px) {
-                    margin-right: 30px;
-                }
-
                 @media (max-width:1130px) {
-                    margin-right: 0;
                     width: 280.98px;
                     height: 563.68px;
                 }
-
-                // position: absolute;
-                // top: 17%;
-                // right: 32%;
-
-                // @media (max-width:1330px) {
-                //     top: 30%;
-                // }
             }
 
             .qr__phone-bottom {
@@ -177,19 +155,23 @@
                     width: 280.98px;
                     height: 563.68px;
                 }
-
-                // position: absolute;
-                // bottom: 4%;
-                // right: 5%;
-
-                // @media (max-width:1330px) {
-                //     right: 2%;
-                // }
             }
         }
-
     }
 
+    .qr__glass-back {
+        display: none;
 
+        @media (max-width:426px) {
+            display: block;
+            background: url("/img/MAIN/QR/drink-back.png") center/100% no-repeat;
+            width: 352.44px;
+            height: 297px;
+            position: absolute;
+            top: 30%;
+            right: -9%;
+            z-index: -1;
+        }
+    }
 
 }

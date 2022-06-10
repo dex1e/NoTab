@@ -1,98 +1,201 @@
 .easier {
+    margin-top: 192px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width:767.98px) {
+        margin: 116px 0 52px 0;
+    }
 
     &__back {
         position: absolute;
-        top: 177px;
-        right: -1.63%;
+        top: 15%;
+        right: -5.63%;
         z-index: -2;
         width: 286.92px;
         height: 267.17px;
         background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
         opacity: 0.7;
-        filter: blur(250px);
+        filter: blur(200px);
         transform: rotate(5.78deg);
+
+        @media (max-width:767.98px) {
+            top: 26%;
+            right: -13%;
+        }
+
+        @media (max-width:445px) {
+            top: 22%;
+            right: -43.35%;
+        }
     }
 
     &__container {
         display: flex;
         justify-content: flex-end;
 
-        .easier__info {
-            flex: 0 1 421px;
-            margin-right: 160px;
+        @media (max-width:767.98px) {
+            justify-content: flex-start;
+        }
 
-            .easier__title {}
+        .easier__info {
+            margin-right: 60px;
+
+            @media (max-width:767.98px) {
+                margin-right: 0;
+            }
+
+            .easier__title {
+                max-width: 421px;
+
+                @media (max-width:767.98px) {
+                    max-width: 198px;
+                }
+            }
 
             .easier__description {
                 max-width: 365px;
+
+                @media (max-width:767.98px) {
+                    max-width: 324px;
+                }
             }
         }
     }
 
     &__phone {
-        margin-left: 311px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // width: 868px;
+        // height: 1038.21px;
+
+        @media (max-width:767.98px) {
+            margin-top: 145px;
+            width: 96%;
+        }
 
         .easier__img {}
 
         .easier__lost {
-            padding: 1rem;
-            text-align: center;
+            // padding: 1rem;
+            padding: 22px 21px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-family: 'Roboto';
             font-weight: 500;
             font-size: 22.8021px;
             line-height: 27px;
-            width: 266.78px;
-            height: 98.81px;
+            max-width: 266.78px;
+            min-height: 98.81px;
             border: 0.76007px solid rgba(255, 255, 255, 0.5);
             border-radius: 18.2417px;
             background-color: black;
+
+            @media (max-width:767.98px) {
+                padding: 13px 12px;
+                max-width: 165px;
+                min-height: 57px;
+                font-size: 14px;
+                line-height: 16px;
+                border-radius: 10px;
+            }
+
+            &-right {
+                position: absolute;
+                top: 29.806%;
+                left: 52.583%;
+
+                @media (max-width:767.98px) {
+                    top: 40%;
+                    right: 4%;
+                }
+            }
+
+            &-left {
+                position: absolute;
+                top: 44.638%;
+                // left: 19.5%;
+                right: 62.5%;
+
+                @media (max-width:767.98px) {
+                    top: 21%;
+                    right: 60%;
+                }
+
+                @media (max-width:445px) {
+                    top: 27%;
+                    right: 45.6%;
+
+                }
+            }
         }
 
-        .easier__lost-right {
-            position: absolute;
-            top: 386px;
-            left: 786px;
-        }
-
-        .easier__lost-left {
-            position: absolute;
-            top: 542px;
-            left: 304px;
-        }
 
         .easier__split {
-            padding: 1rem;
-            text-align: center;
+            padding: 19px 22px;
+            // text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-family: 'Roboto';
             font-weight: 700;
             font-size: 22.8021px;
             line-height: 27px;
-            width: 185px;
-            height: 91px;
+            max-width: 185px;
+            min-height: 91px;
             border: 0.76007px solid rgba(255, 255, 255, 0.5);
             border-radius: 18.2417px;
             background-color: black;
             position: absolute;
-            top: 811px;
-            left: 1006px;
+            top: 67%;
+            left: 68%;
+
+            @media (max-width:767.98px) {
+                padding: 13px 17px;
+                max-width: 122px;
+                min-height: 58px;
+                font-size: 14px;
+                line-height: 16px;
+                border-radius: 10px;
+                top: 99%;
+                left: 63.467%;
+            }
         }
 
         .easier__skip {
-            padding: 1rem;
+            padding: 19px 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             font-family: 'Roboto';
             font-weight: 500;
             font-size: 22.8021px;
             line-height: 27px;
-            width: 175.58px;
-            height: 65.37px;
+            max-width: 175.58px;
+            min-height: 65.37px;
             border: 0.76007px solid rgba(255, 255, 255, 0.5);
             border-radius: 18.2417px;
             background-color: black;
             position: absolute;
-            top: 902px;
-            left: 509px;
+            top: 74.339%;
+            right: 54.5%;
+
+            @media (max-width:767.98px) {
+                padding: 14px;
+                max-width: 107px;
+                min-height: 43px;
+                font-size: 14px;
+                line-height: 16px;
+                border-radius: 10px;
+                top: 86.339%;
+                right: 59.6%;
+            }
         }
     }
 }

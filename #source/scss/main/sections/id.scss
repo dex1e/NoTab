@@ -28,6 +28,7 @@
 
         .id__phones {
             display: flex;
+            gap: 49.44px;
             margin-left: 100px;
 
             @media (max-width: 1320px) {
@@ -37,20 +38,15 @@
             @media (max-width: 1023.98px) {
                 flex-direction: column;
                 margin: 70px 0 0 0;
+                gap: 55px;
             }
 
             .id__phone-left {
-                margin-right: 49.44px;
-
                 @media (max-width: 1320px) {
                     width: 287.08px;
                     height: 575.93px;
-                    margin-right: 20px;
                 }
 
-                @media (max-width: 1023.98px) {
-                    margin-right: 0;
-                }
             }
 
             .id__phone-right {
@@ -58,17 +54,11 @@
                     width: 287.08px;
                     height: 575.93px;
                 }
-
-                @media (max-width: 1023.98px) {
-                    margin-top: 55px;
-                }
-
             }
         }
 
         .id__info {
             margin: 0 191px 74.15px 0;
-            // flex: 0 1 400px;
             align-self: flex-end;
 
             @media (max-width: 1320px) {
@@ -79,8 +69,6 @@
                 margin: 0;
                 align-self: center;
             }
-
-            .id__title {}
 
             .id__description {
                 max-width: 316px;

@@ -58,6 +58,13 @@
                     width: 144.57px;
                     height: 86px;
                     top: 210%;
+                    left: 2%;
+                }
+
+                @media (max-width: 430px) {
+                    width: 144.57px;
+                    height: 86px;
+                    top: 210%;
                     left: -9%;
                 }
             }
@@ -68,16 +75,22 @@
                 right: 30%;
 
                 @media (max-width: 1023.98px) {
-                    top: 155%;
-                    left: 2.903%;
+                    top: 165%;
+                    left: 8.903%;
                 }
 
                 @media (max-width: 767.98px) {
                     width: 109.43px;
                     height: 21.28px;
-                    left: 10.903%;
+                    top: 160%;
+                    left: 13.903%;
                 }
 
+                @media (max-width:430px) {
+                    width: 109.43px;
+                    height: 21.28px;
+                    left: 10.903%;
+                }
             }
 
             &__bulb {
@@ -91,6 +104,11 @@
                 }
 
                 @media (max-width: 767.98px) {
+                    width: 85.62px;
+                    height: 90.56px;
+                }
+
+                @media (max-width: 430px) {
                     width: 85.62px;
                     height: 90.56px;
                 }
@@ -122,6 +140,13 @@
                     top: 140%;
                     left: 50.565%;
                 }
+
+                @media (max-width: 430px) {
+                    width: 90.95px;
+                    height: 55.18px;
+                    top: 140%;
+                    left: 50.565%;
+                }
             }
 
             &__data08 {
@@ -131,11 +156,18 @@
                 z-index: -1;
 
                 @media (max-width: 1023.98px) {
-                    top: 225%;
-                    left: 20.806%;
+                    top: 210%;
+                    left: 22.806%;
                 }
 
                 @media (max-width: 767.98px) {
+                    width: 90.95px;
+                    height: 55.18px;
+                    top: 185%;
+                    left: 33.806%;
+                }
+
+                @media (max-width: 430px) {
                     width: 90.95px;
                     height: 55.18px;
                     top: 185%;
@@ -149,12 +181,18 @@
                 right: 6%;
 
                 @media (max-width: 1023.98px) {
-                    top: 280%;
+                    top: 250%;
                     right: 12%;
-
                 }
 
                 @media (max-width: 767.98px) {
+                    width: 296px;
+                    height: 59.18px;
+                    top: 250%;
+                    right: -8%;
+                }
+
+                @media (max-width: 430px) {
                     width: 296px;
                     height: 59.18px;
                     top: 250%;

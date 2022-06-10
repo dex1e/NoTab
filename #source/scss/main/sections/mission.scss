@@ -1,11 +1,14 @@
 .mission {
+    margin-top: 24.67px;
+
     @media (max-width: 1023.98px) {
+        margin-top: 70px;
         display: flex;
         flex-direction: column;
     }
 
     .cookies {
-        margin-top: 15px;
+        // margin-top: 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -67,12 +70,14 @@
         margin-top: 61px;
         display: flex;
         justify-content: center;
+        gap: 81px;
 
         @media (max-width: 1023.98px) {
-            margin-top: 70px;
+            margin-top: 0;
             order: 1;
             flex-direction: column;
             align-items: center;
+            gap: 30px;
         }
 
         .mission__border {
@@ -126,12 +131,9 @@
             }
         }
 
-        .mission__contacts {
-            margin-right: 81px;
-
+        .mission__login {
             @media (max-width: 1023.98px) {
-                margin-right: 0;
-                margin-bottom: 30px;
+                height: 167px;
             }
         }
     }
@@ -148,6 +150,10 @@
             flex-direction: column-reverse;
             justify-content: center;
             align-items: center;
+        }
+
+        @media (max-width:767.98px) {
+            padding: 0 15px;
         }
 
         .mission__phone {
@@ -173,6 +179,7 @@
         }
 
         .mission__info {
+            display: flex;
             position: relative;
             margin-right: 163px;
 
@@ -181,7 +188,17 @@
             }
 
             @media (max-width: 1023.98px) {
+                align-items: center;
                 margin: 0;
+            }
+
+            @media (max-width:767.98px) {
+                width: 315px;
+            }
+
+            @media (max-width:400.98px) {
+                align-items: flex-start;
+                min-width: 100%;
             }
 
             &-back {
@@ -206,6 +223,14 @@
 
             .mission__description {
                 max-width: 315px;
+
+                @media (max-width: 1023.98px) {
+                    max-width: 295.3px;
+                }
+
+                @media (max-width:767.98px) {
+                    white-space: pre-line;
+                }
             }
         }
     }

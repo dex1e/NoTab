@@ -831,7 +831,7 @@ body {
 
 .id {
   margin-top: 283px;
-  background: url("img/MAIN/id/back_blur.png") top/100% no-repeat, url("img/MAIN/id/background.png") top/100% no-repeat;
+  background: url("../img/MAIN/id/back_blur.png") top/100% no-repeat, url("../img/MAIN/id/background.png") top/100% no-repeat;
 }
 @media (max-width: 1320px) {
   .id {

@@ -2,9 +2,9 @@
     margin-top: 222.79px;
     position: relative;
     background:
-        url("/img/MAIN/QR/back-blur.png") top center/100vw no-repeat,
-        url("/img/MAIN/QR/dj-back.png") top left/50vw no-repeat,
-        url("/img/MAIN/QR/drink-back.png") top right/50vw no-repeat;
+        url("../img/MAIN/QR/back-blur.png") top center/100vw no-repeat,
+        url("../img/MAIN/QR/dj-back.png") top left/50vw no-repeat,
+        url("../img/MAIN/QR/drink-back.png") top right/50vw no-repeat;
 
     @media (max-width:1130px) {
         margin-top: 34.82px;
@@ -13,8 +13,8 @@
 
     @media (max-width:426px) {
         background:
-            url("/img/MAIN/QR/back-blur.png") top center/416px 335px no-repeat,
-            url("/img/MAIN/QR/dj-back.png") top center/416px 335px no-repeat,
+            url("../img/MAIN/QR/back-blur.png") top center/416px 335px no-repeat,
+            url("../img/MAIN/QR/dj-back.png") top center/416px 335px no-repeat,
     }
 
 
@@ -164,7 +164,7 @@
 
         @media (max-width:426px) {
             display: block;
-            background: url("/img/MAIN/QR/drink-back.png") center/100% no-repeat;
+            background: url("../img/MAIN/QR/drink-back.png") center/100% no-repeat;
             width: 352.44px;
             height: 297px;
             position: absolute;

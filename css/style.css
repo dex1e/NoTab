@@ -149,6 +149,7 @@ body {
   height: 100%;
   overflow-x: hidden;
   font-family: Montserrat;
+  font-size: 18px;
   color: #fff;
   background-color: black;
 }
@@ -976,6 +977,11 @@ body {
 }
 .integration__container .integration__info .integration__description {
   max-width: 395px;
+}
+@media (max-width: 767.98px) {
+  .integration__container .integration__info .integration__description {
+    max-width: 338px;
+  }
 }
 .integration__container .image__years {
   position: absolute;

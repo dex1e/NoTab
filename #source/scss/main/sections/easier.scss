@@ -70,9 +70,6 @@
         justify-content: center;
         align-items: center;
 
-        // width: 868px;
-        // height: 1038.21px;
-
         @media (max-width:767.98px) {
             margin-top: 145px;
             width: 96%;
@@ -81,7 +78,6 @@
         .easier__img {}
 
         .easier__lost {
-            // padding: 1rem;
             padding: 22px 21px;
             display: flex;
             justify-content: center;
@@ -119,7 +115,6 @@
             &-left {
                 position: absolute;
                 top: 44.638%;
-                // left: 19.5%;
                 right: 62.5%;
 
                 @media (max-width:767.98px) {
@@ -138,7 +133,6 @@
 
         .easier__split {
             padding: 19px 22px;
-            // text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;

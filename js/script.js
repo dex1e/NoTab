@@ -1,20 +1,3 @@
-// let form = document.querySelector(".form"),
-//     formInputs = document.querySelectorAll(".req")
-
-// form.onsubmit = function () {
-//     formInputs.forEach(function (input) {
-//         if (input.value === '') {
-//             input.classlist.add('error')
-//             console.log("input not field")
-//         } else {
-//             input.classList.remove('error')
-//         }
-//     })
-
-//     return false
-
-// }
-
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('form')
     form.addEventListener('submit', formSend)

@@ -1465,6 +1465,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 25px;
 }
 @media (max-width: 767.98px) {
   .generate__container {
